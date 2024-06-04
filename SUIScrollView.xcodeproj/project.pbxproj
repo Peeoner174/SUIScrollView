@@ -11,6 +11,12 @@
 		5CF9D2EC2C0F001600A11EEF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF9D2EB2C0F001600A11EEF /* ContentView.swift */; };
 		5CF9D2EE2C0F001800A11EEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CF9D2ED2C0F001800A11EEF /* Assets.xcassets */; };
 		5CF9D2F12C0F001800A11EEF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CF9D2F02C0F001800A11EEF /* Preview Assets.xcassets */; };
+		5CF9D2F82C0F0DCE00A11EEF /* SUIScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF9D2F72C0F0DCE00A11EEF /* SUIScrollView.swift */; };
+		5CF9D2FB2C0F0DFB00A11EEF /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5CF9D2FA2C0F0DFB00A11EEF /* SnapKit */; };
+		5CF9D2FD2C0F0DFB00A11EEF /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 5CF9D2FC2C0F0DFB00A11EEF /* SnapKit-Dynamic */; };
+		5CF9D3002C0F0E7600A11EEF /* Environments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF9D2FF2C0F0E7600A11EEF /* Environments.swift */; };
+		5CF9D3022C0F0EA000A11EEF /* SUIScrollDragState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF9D3012C0F0EA000A11EEF /* SUIScrollDragState.swift */; };
+		5CF9D3042C0F0EB500A11EEF /* AnimatedOffset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF9D3032C0F0EB500A11EEF /* AnimatedOffset.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,10 @@
 		5CF9D2EB2C0F001600A11EEF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5CF9D2ED2C0F001800A11EEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5CF9D2F02C0F001800A11EEF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5CF9D2F72C0F0DCE00A11EEF /* SUIScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUIScrollView.swift; sourceTree = "<group>"; };
+		5CF9D2FF2C0F0E7600A11EEF /* Environments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environments.swift; sourceTree = "<group>"; };
+		5CF9D3012C0F0EA000A11EEF /* SUIScrollDragState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUIScrollDragState.swift; sourceTree = "<group>"; };
+		5CF9D3032C0F0EB500A11EEF /* AnimatedOffset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedOffset.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +36,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CF9D2FB2C0F0DFB00A11EEF /* SnapKit in Frameworks */,
+				5CF9D2FD2C0F0DFB00A11EEF /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,6 +47,7 @@
 		5CF9D2DD2C0F001600A11EEF = {
 			isa = PBXGroup;
 			children = (
+				5CF9D2FE2C0F0E3C00A11EEF /* App */,
 				5CF9D2E82C0F001600A11EEF /* SUIScrollView */,
 				5CF9D2E72C0F001600A11EEF /* Products */,
 			);
@@ -51,10 +64,10 @@
 		5CF9D2E82C0F001600A11EEF /* SUIScrollView */ = {
 			isa = PBXGroup;
 			children = (
-				5CF9D2E92C0F001600A11EEF /* SUIScrollViewApp.swift */,
-				5CF9D2EB2C0F001600A11EEF /* ContentView.swift */,
-				5CF9D2ED2C0F001800A11EEF /* Assets.xcassets */,
-				5CF9D2EF2C0F001800A11EEF /* Preview Content */,
+				5CF9D2F72C0F0DCE00A11EEF /* SUIScrollView.swift */,
+				5CF9D2FF2C0F0E7600A11EEF /* Environments.swift */,
+				5CF9D3012C0F0EA000A11EEF /* SUIScrollDragState.swift */,
+				5CF9D3032C0F0EB500A11EEF /* AnimatedOffset.swift */,
 			);
 			path = SUIScrollView;
 			sourceTree = "<group>";
@@ -65,6 +78,17 @@
 				5CF9D2F02C0F001800A11EEF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5CF9D2FE2C0F0E3C00A11EEF /* App */ = {
+			isa = PBXGroup;
+			children = (
+				5CF9D2EF2C0F001800A11EEF /* Preview Content */,
+				5CF9D2ED2C0F001800A11EEF /* Assets.xcassets */,
+				5CF9D2EB2C0F001600A11EEF /* ContentView.swift */,
+				5CF9D2E92C0F001600A11EEF /* SUIScrollViewApp.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +107,10 @@
 			dependencies = (
 			);
 			name = SUIScrollView;
+			packageProductDependencies = (
+				5CF9D2FA2C0F0DFB00A11EEF /* SnapKit */,
+				5CF9D2FC2C0F0DFB00A11EEF /* SnapKit-Dynamic */,
+			);
 			productName = SUIScrollView;
 			productReference = 5CF9D2E62C0F001600A11EEF /* SUIScrollView.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +139,9 @@
 				Base,
 			);
 			mainGroup = 5CF9D2DD2C0F001600A11EEF;
+			packageReferences = (
+				5CF9D2F92C0F0DFB00A11EEF /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 5CF9D2E72C0F001600A11EEF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,7 +169,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5CF9D2EC2C0F001600A11EEF /* ContentView.swift in Sources */,
+				5CF9D3002C0F0E7600A11EEF /* Environments.swift in Sources */,
+				5CF9D3022C0F0EA000A11EEF /* SUIScrollDragState.swift in Sources */,
+				5CF9D3042C0F0EB500A11EEF /* AnimatedOffset.swift in Sources */,
 				5CF9D2EA2C0F001600A11EEF /* SUIScrollViewApp.swift in Sources */,
+				5CF9D2F82C0F0DCE00A11EEF /* SUIScrollView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,7 +306,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SUIScrollView/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SUIScrollView/App/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -299,7 +334,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SUIScrollView/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SUIScrollView/App/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -342,6 +377,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5CF9D2F92C0F0DFB00A11EEF /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5CF9D2FA2C0F0DFB00A11EEF /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5CF9D2F92C0F0DFB00A11EEF /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		5CF9D2FC2C0F0DFB00A11EEF /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5CF9D2F92C0F0DFB00A11EEF /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5CF9D2DE2C0F001600A11EEF /* Project object */;
 }
